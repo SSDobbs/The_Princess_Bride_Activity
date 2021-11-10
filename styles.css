@@ -9,28 +9,24 @@ html {
     box-sizing: border-box;
 
 }
-body{
-    background-color: rgb(245, 244, 189);
+#mainheader{
+    background-image: url('/img/theprincessbridelogo.jpg');
+}
+body {
+    background-color: rgb(240, 238, 140);
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    margin: 25px;
     font-weight: bold;
 }
 
-  /*navigation menu*/
+/*navigation menu*/
 nav {
     overflow: hidden;
-    background-color: #333333;
     padding-bottom: 20px;
+    position: fixed;
+    
 }
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.active {
-    background-color: #527ece;
-    color: white;
-}
+
 nav a {
     float: left;
     display: block;
@@ -38,53 +34,91 @@ nav a {
     text-align: left;
     text-decoration: none;
     padding: 10px;
+    background-color: black;
 }
-nav>ul{
+
+.mainMenu {
+    display: none;
+}
+
+.mainMenu.hamburger {
+    display: block;
+
+} 
+
+nav>ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+textarea{
+    color: gray;
 }
 .header {
     font-family: 'Griffy', cursive;
-    font-size: 40px;
-    font-weight: bolder; 
+    font-size: 45px;
+    font-weight: bolder;
     text-decoration: underline;
 }
-#pblogo{
-    border-radius: 30%;
-}
-.heading{
-    font-family: 'Griffy', cursive;
+
+p {
     font-size: 30px;
-    text-decoration: underline; 
 }
-.btn{
+
+#pblogo {
+    border-radius: 30%;
+    margin-top: 60px;
+}
+
+.btn {
     background-color: burlywood;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     border: 1px soild black;
     display: inline-block;
+    font-size: 20px;
 }
-#eel{
-    
-}
-#sit-and-wait{
 
+.five{
+    margin: 2.5px;
 }
-#fight{
 
+#question {
+    font-size: 30px;
+    text-align: center;
+}
+.box {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.contact {
+    font-size: 30px;
 }
 
 /*media query medium */
-@media only screen and (min-width: 1024px) {
-    body{
-        background-color: chartreuse;
+@media only screen and (min-width: 628px) {    
+    .mainMenu {
+        display: initial;
     }
- }/* end media query med screen */
+    #toggle-bar {
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+}
+/* end media query med screen */
+
 
 /*media query large */
-@media only screen and (min-width: 1440px) {
-    body{
-        background-color: red;
-    }
-} /*end media query large screen */
+@media only screen and (min-width: 1024px) {
+
+}
+/*end media query large screen */
 

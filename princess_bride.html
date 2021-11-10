@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <title> The Princess Bride Game-Along</title>
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="welcomeFunction()">
+
+    <nav>
+        <div class="toogleMenu">
+            <h1 id="toggle-bar">&#9776 </h1>
+        </div>
+        <ul class="mainMenu">
+            <li> <a id="homeNav" href="index.html">Home </a></li>
+            <li> <a id="florinNav" href="#florin">Florin </a></li>
+            <li> <a id="insanityNav" href="#insanity">Cliffs of Insanity </a></li>
+            <li><a id="indigoNav" href="#indigo">Dual with Indigo </a></li>
+            <li><a id="fezzikNav" href="#fezzik">Fight with Fezzik </a></li>
+            <li> <a id="witsNav" href="#wits">Battle of Wits</a></li>
+            <li> <a id="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--SITE DESCRIPTION-->
+    <div>
+        <main class="main">
+            <header>
+                <div>
+                    <img id="pblogo" src="img/theprincessbridelogo.jpg" alt="The Princess Bride Title" width= 350px
+                        height=auto>
+                    <h1 class="header"> THE PRINCESS BRIDE GAME-ALONG</h1>
+                    <p> This game-along is a random Princess Bride knowlege test,
+                        a follow-the-path-game; and a way to see what wonderfully
+                        useless facts you posses about The Princess Bride and
+                        allows you to pick your own path in some instances.</p>
+                    <h2 class="header" id="florin">We begin our journey in the country of Florin </h1>
+                </div>
+            </header>
+            <!--BEGINNING MOVIE QUESTIONS-->
+            <section>
+                <div>
+                    <ul>
+                        <li id="question"> Who attacked the ship Westley was sailing on? <br>
+                            <form>
+                                <input class="box pirate" type="text" placeholder="Guess the Answer" >
+                                <button class=btn id="pirate" type="button" onclick="pirateFunction()"> Check My Answer
+                                </button>
+                            </form>
+                        </li> <br>
+                        <li id="question"> With Westley presummed dead who is Buttercup engaged to 5 years later? <br>
+                            <input class ="box"  type=text placeholder="Guess the Answer" required>
+                            <button class=btn id="humperdink" type="button" onclick="humperdinkFunction();"> Check My
+                                Answer
+                            </button>
+                        </li> <br>
+                        <li id="question"> Who does Vizzini want the kingdom to assume took Buttercup? <br>
+                            <input class ="box" type=text placeholder="Guess the Answer" required>
+                            <button class=btn id="guilder" type="button" onclick="guilderFunction();"> Check My Answer
+                            </button>
+                        </li> <br>
+                        <li id="question"> Once aboard the ship Vizzini becomes irritated with Indigo and Fezzik...
+                            <br> <br> Create a rhyme to help pass the time.<br>
+                            <textarea class ="box" onfocus="this.value=''"> You can rhyme, almost anytime</textarea>
+                            </li> <br>
+                        <li id="question"> On this journey with your captors, a ship is spotted following you what do you do...?
+                            <ul> <br>
+                                <button class="btn five" id="eel"> Jump into eel-infested waters </button>
+                                <button class="btn five" id="sit-and-wait"> Sit still and wait for your rescuer</button>
+                                <button class="btn five" id="fight"> Attempt to fight all 3 (one of which is a giant)
+                                </button>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr id="insanity">
+                </div>
+            </section>
+
+            <section>
+                <!--CLIFFS OF INSANITY-->
+                <div>
+                    <h1 class="header">THE CLIFFS OF INSANITY</h1>
+                    <h2> Shall we climb?</h2>
+                    <p>Once you reach the top, the rope is cut to stop the follower, who didn't fall.</p>
+                    <p id="indigo">Let's wait for him to climb to the top.... </p>
+                </div>
+            </section>
+            <section>
+                <!--DUAL WITH INDIGO-->
+                <div>
+                    <h1 class="header">INDIGO</h1>
+                    <h2>Do you by chance have 6 fingers on your left hand?</h2>
+                    <p> Hello, My name is Indigo Montoya. You killed my father, prepare to die.</p>
+                </div>
+            
+            </section>
+            <h1 id="fezzik"> --FINISH HIM, FINISH YOUR WAY!--</h1>
+            <section>
+                <!--FIGHT WITH FEZZIK-->
+                <div>
+                    <h1 class="header">FEZZIK</h1>
+                    <h2>Hand-to-Hand Combat with a Giant..</h2>
+                    <p>"I do not envy you, the headache you will have when you awake."</p>
+                </div>
+            </section>
+            <h1>--INCONCIEVABLE--</h1>
+            <section>
+                <!--BATTLE OF WITS-->
+                <div>
+                    <h1 class="head" id="wits">BATTLE OF WITS</h1>
+                    <h2>Have you built up your immunity?</h2>
+                    <p>Which wine will you drink?</p>
+                    <img src="img/chalice2.jpg"
+                        onclick="alert('You chose wrong, seeing as I switched the glasses while your back was turned.')"
+                        alt="wine chalice" height=200px width=auto>
+                    <img src="img/chalice2.jpg"
+                        onclick="alert('You chose wrong, seeing as I switched the glasses while your back was turned.')"
+                        alt="wine chalice" height=200px width=auto>
+                </div>
+                <div>
+                    <h1 class="header">TO BE CONTINUED... </h1>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

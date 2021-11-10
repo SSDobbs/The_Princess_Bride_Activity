@@ -10,106 +10,15 @@
 </head>
 
 <body>
-    <nav>
-        <div class="toogleMenu">
-            <h1 id="toggle-bar">&#9776 </h1>
-        </div>
-        <ul class="mainNav">
-            <li> <a id="florinNav" href="#florin">Florin </a></li>
-            <li> <a id="insanityNav" href="#insanity">Cliffs of Insanity </a></li>
-            <li><a id="indigoNav" href="#indigo">Dual with Indigo </a></li>
-            <li><a id="fezzikNav" href="#fezzik">Fight with Fezzik </a></li>
-            <li> <a id="witsNav" href="#wits">Battle of Wits</a></li>
-        </ul>
-    </nav>
-    <!--SITE DESCRIPTION-->
-    <section>
-        <div>
-            <img id="pblogo" src="img/theprincessbridelogo.jpg" alt="The Princess Bride Title" width=450px height=auto>
-            <h1 class="header"> THE PRINCESS BRIDE GAME-ALONG</h1>
-            <p> This game-along is a random Princess Bride knowlege test,
-                a follow-the-path-game; and a way to see what wonderfully
-                useless facts you posses about The Princess Bride and
-                allows you to pick your own path in some instances.</p>
-            <h2 class="heading" id="florin">We begin our journey in the country of Florin </h1>
-        </div>
-    </section>
-    <!--BEGINNING MOVIE QUESTIONS-->
-    <section>
-        <div>
-            <ol>
-                <li> Who attacked the ship Westley was sailing on? <br>
-                    <input class="pirate" type="text" placeholder="Guess the Answer">
-                    <button class=btn id="pirate" type="button" onclick="pirateFunction()"> Check My Answer </button>
-                </li> <br>
-                <li> With Westley presummed dead who is Buttercup engaged to 5 years later? <br>
-                    <input type=text placeholder="Guess the Answer">
-                    <button class=btn id="humperdink" type="button" onclick="humperdinkFunction();"> Check My Answer
-                    </button>
+    <img id="pblogo" src="img/theprincessbridelogo.jpg" alt="The Princess Bride Title" width=350px height=auto>
+    <h1 class="header"> THE PRINCESS BRIDE GAME-ALONG</h1>
 
-                </li> <br>
-                <li> Who does Vizzini want the kingdom to assume took Buttercup? <br>
-                    <input type=text placeholder="Guess the Answer">
-                    <button class=btn id="guilder" type="button" onclick="guilderFunction();"> Check My Answer </button>
+    <form>
+        <input class ="box" id="name" type="text" placeholder="Name">
+    </form>
+    <br>
+    <a href='/princess_bride.html'><button class="btn" > Enter </button> </a> 
 
-                </li> <br>
-                <li> Once aboard the ship Vizzini becomes irritated with Indigo and Fezzik...
-                    <br> <br> Create a rhyme to help pass the time.<br>
-                    <input type=text placeholder="You can rhyme, almost anytime"></li> <br>
-                <li> On this journey with your captors, a ship is spotted following you what do you do...?
-                    <ul> <br>
-                        <button class="btn" id="eel"> Jump into eel-infested waters </button>
-                        <button class="btn" id="sit-and-wait"> Sit still and wait for your rescuer</button>
-                        <button class="btn" id="fight"> Attempt to fight all 3 (one of which is a giant) </button>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-    </section>
-    <section>
-        <!--CLIFFS OF INSANITY-->
-        <div>
-            <h1 class="heading" id="insanity">THE CLIFFS OF INSANITY</h1>
-            <h2> Shall we climb?</h2>
-            <p>Once you reach the top, the rope is cut to stop the follower, who didn't fall.</p>
-            <p>Let's wait for him to climb to the top.... </p>
-        </div>
-    </section>
-    <section>
-        <!--DUAL WITH INDIGO-->
-        <div>
-            <h1 class="heading" id="indigo">INDIGO</h1>
-            <h2>Do you by chance have 6 fingers on your left hand?</h2>
-            <p> Hello, My name is Indigo Montoya. You killed my father, prepare to die.</p>
-        </div>
-    </section>
-    <h1> FINISH HIM, FINISH YOUR WAY!</h1>
-    <section>
-        <!--FIGHT WITH FEZZIK-->
-        <div>
-            <h1 class="heading" id="fezzik">FEZZIK</h1>
-            <h2>Hand-to-Hand Combat with a Giant...</h2>
-            <p>"I do not envy you, the headache you will have when you awake."</p>
-        </div>
-    </section>
-    <h1>--INCONCIEVABLE--</h1>
-    <section>
-        <!--BATTLE OF WITS-->
-        <div>
-            <h1 class="heading" id="wits">BATTLE OF WITS</h1>
-            <h2>Have you built up your immunity?</h2>
-            <p>Which wine will you drink?</p>
-            <img src="img/chalice2.jpg"
-                onclick="alert('You chose wrong, seeing as I switched the glasses while your back was turned.')"
-                alt="wine chalice" height=200px width=auto>
-            <img src="img/chalice2.jpg"
-                onclick="alert('You chose wrong, seeing as I switched the glasses while your back was turned.')"
-                alt="wine chalice" height=200px width=auto>
-
-        </div>
-    </section>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
