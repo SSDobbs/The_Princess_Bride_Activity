@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title> The Princess Bride Game-Along</title>
     <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
@@ -13,11 +14,19 @@
     <img id="pblogo" src="img/theprincessbridelogo.jpg" alt="The Princess Bride Title" width=350px height=auto>
     <h1 class="header"> THE PRINCESS BRIDE GAME-ALONG</h1>
 
-    <form>
-        <input class ="box" id="name" type="text" placeholder="Name">
+    <form action="" >
+        <input class="box" type="text" id="name" name="name" placeholder="Name">
     </form>
     <br>
-    <a href='/princess_bride.html'><button class="btn" > Enter </button> </a> 
+    <button class="btn" type="submit" value="Submit" onclick="welcomeFunction()"> Submit </button> </a>
+
+    <script>
+        function welcomeFunction() {
+            let y = document.getElementById("name").value;
+        alert('Welcome ' + y); 
+        window.open("/princess_bride.html", "_self")
+        }
+    </script>
 
 </body>
 

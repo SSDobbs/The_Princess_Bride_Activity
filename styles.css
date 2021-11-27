@@ -9,9 +9,7 @@ html {
     box-sizing: border-box;
 
 }
-#mainheader{
-    background-image: url('/img/theprincessbridelogo.jpg');
-}
+
 body {
     background-color: rgb(240, 238, 140);
     text-align: center;
@@ -19,22 +17,49 @@ body {
     font-weight: bold;
 }
 
-/*navigation menu*/
-nav {
-    overflow: hidden;
-    padding-bottom: 20px;
+/*top button*/
+#myBtn {
+    display: none;
     position: fixed;
-    
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 244, 241);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: rgb(231, 210, 16);
+}
+
+/*navigation menu*/
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav a {
-    float: left;
-    display: block;
     color: rgb(255, 255, 255);
-    text-align: left;
-    text-decoration: none;
-    padding: 10px;
+    text-align: center;
+    padding: 16px;
     background-color: black;
+    text-decoration: none;
+    display: block;
+
 }
 
 .mainMenu {
@@ -43,35 +68,21 @@ nav a {
 
 .mainMenu.hamburger {
     display: block;
-
-} 
-
-nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-textarea{
-    color: gray;
-}
+
 .header {
     font-family: 'Griffy', cursive;
     font-size: 45px;
-    font-weight: bolder;
     text-decoration: underline;
 }
 
-p {
-    font-size: 30px;
-}
-
-#pblogo {
-    border-radius: 30%;
-    margin-top: 60px;
+#pblogo,
+#hide {
+    border-radius: 20%;
 }
 
 .btn {
@@ -79,46 +90,91 @@ p {
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    border: 1px soild black;
-    display: inline-block;
     font-size: 20px;
+    border-radius: 12px;
 }
 
-.five{
-    margin: 2.5px;
+.intro,
+.contact,
+p {
+    font-size: 36px;
 }
 
 #question {
     font-size: 30px;
-    text-align: center;
+    padding-right: 45px;
 }
+
 .box {
     font-family: 'Shadows Into Light', cursive;
     font-size: 25px;
     text-align: center;
 }
-.contact {
-    font-size: 30px;
+
+#chalice {
+    height: 350px;
+    width: auto;
 }
 
+/*fezzik minesweeper game*/
+#field table {
+    border-collapse: collapse;
+    font-size: 150%;
+    font-family: san-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#field table td {
+    background-color: rgba(247, 203, 7, 0.87);
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    border: 1px solid black;    
+}
+
+
+
 /*media query medium */
-@media only screen and (min-width: 628px) {    
-    .mainMenu {
-        display: initial;
-    }
+@media only screen and (min-width: 628px) {
+
+    #hide,
     #toggle-bar {
         display: none;
     }
-    nav{
+
+    .mainMenu {
+        display: initial;
+    }
+
+    nav {
+        overflow: hidden;
         width: 100%;
+        position: fixed;
+        display: block;
+        float: left;
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .cliff {
+        background-image: url(img/cliffofinsanity.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: auto;
     }
 }
+
 /* end media query med screen */
 
 
 /*media query large */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {}
 
-}
 /*end media query large screen */
-
