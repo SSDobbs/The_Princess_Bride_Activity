@@ -20,10 +20,10 @@
         <h1 class="header">We love to hear from you!</h1>
         <h2 class="contact">Please fill out the form below with any comments, questions, ideas...you name it. </h2>
         <form>
-            <input class ="box" type="text" name="name" placeholder="Name" required></label> <br>
-            <input class ="box" type="text" name="email" placeholder="EMAIL" required></label> <br>
-            <textarea class ="box" onfocus="this.value=''"> Questions, Comments, Ideas...  </textarea></label> <br>
-            <input type="submit"  value="Send My Comment!" class="btn">
+            <input class ="box" id="contact_name" type="text" name="name" placeholder="Name" required></label>
+            <input class ="box" id="contact_email" type="email" name="email" placeholder="EMAIL" required></label> 
+            <textarea class ="box" id="contact_area" onfocus="this.value=''"> Questions, Comments, Ideas...  </textarea></label>
+            <input type="submit"  value="Send My Comment!" class="btn" id="contact_submit" >
         </form>
     </section>
     <script src="script.js"></script>

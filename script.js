@@ -33,12 +33,9 @@ function topFunction() {
 }
 
 
-function welcomeFunction() {
-    console.log(getElementById('name') + "welcome")
-}
-
 /* Q1 onClick Check My Answer */
 function pirateFunction() {
+    document.getElementById("pirate").required = true;
     document.getElementById("pirate").innerHTML = "Dread Pirate Roberts";
 }
 
@@ -68,7 +65,7 @@ document.getElementById("sit-and-wait").addEventListener("click", sitFunction);
 function sitFunction() {
     document.getElementById("sit-and-wait").
     innerHTML = "AS YOU WISH--we will sit and wait";
-    var audio = new Audio('asyouwish.mp3');
+    var audio = new Audio('audio/asyouwish.mp3');
     audio.play();
 }
 
@@ -78,6 +75,10 @@ addEventListener("click", fightFunction);
 function fightFunction() {
     document.getElementById("fight").
     innerHTML = "INCONCEIVABLE--You are but a small stature woman with no weapons BUT Fezzik wishes to do no harm";
-    var audio = new Audio('inconceivable.mp3');
+    var audio = new Audio('audio/inconceivable.mp3');
     audio.play();
 } /*End Q5 */
+
+/*CONTACT FORM SCRIPT*/
+
+

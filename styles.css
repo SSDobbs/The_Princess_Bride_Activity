@@ -11,10 +11,11 @@ html {
 }
 
 body {
-    background-color: rgb(240, 238, 140);
+    background-color: #f5dcac;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
+    color: #47402c;
 }
 
 /*top button*/
@@ -27,15 +28,16 @@ body {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(245, 244, 241);
-    color: rgb(0, 0, 0);
+    background-color: #4f3e31;
+    color: bisque;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
 }
 
 #myBtn:hover {
-    background-color: rgb(231, 210, 16);
+    background-color: bisque;
+    ;
 }
 
 /*navigation menu*/
@@ -53,10 +55,11 @@ nav {
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: bisque;
+    ;
     text-align: center;
     padding: 16px;
-    background-color: black;
+    background-color: #4f3e31;
     text-decoration: none;
     display: block;
 
@@ -78,6 +81,7 @@ ul {
     font-family: 'Griffy', cursive;
     font-size: 45px;
     text-decoration: underline;
+    color: #32c0e3;
 }
 
 #pblogo,
@@ -86,7 +90,8 @@ ul {
 }
 
 .btn {
-    background-color: burlywood;
+    background-color: #4f3e31;
+    color: bisque;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -97,8 +102,10 @@ ul {
 .intro,
 .contact,
 p {
-    font-size: 36px;
+    font-size: 26px;
 }
+
+
 
 #question {
     font-size: 30px;
@@ -126,18 +133,52 @@ p {
 }
 
 #field table td {
-    background-color: rgba(247, 203, 7, 0.87);
+    background-color: #eda871;
     width: 30px;
     min-width: 30px;
     height: 30px;
     min-height: 30px;
-    border: 1px solid black;    
+    border: 1px solid #4f3e31;
 }
 
-
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #eda871;
+}
 
 /*media query medium */
 @media only screen and (min-width: 628px) {
+
+    .cliff {
+        background-image: url(img/cliffofinsanity.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: auto;
+    }
+
+    canvas {
+        margin-left: 45px;
+        float: left;
+    }
+
+    #control {
+        display: inline;
+    }
+
+    #hide {
+        display: none;
+    }
+    .intro {
+        color: bisque;
+        outline-color: #4f3e31;
+    }
+}
+
+/* end media query med screen */
+
+
+/*media query large */
+@media only screen and (min-width: 900px) {
 
     #hide,
     #toggle-bar {
@@ -163,18 +204,9 @@ p {
         padding: 10px;
     }
 
-    .cliff {
-        background-image: url(img/cliffofinsanity.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: auto;
+    #pblogo {
+        margin-top: 55px;
     }
 }
-
-/* end media query med screen */
-
-
-/*media query large */
-@media only screen and (min-width: 1024px) {}
 
 /*end media query large screen */

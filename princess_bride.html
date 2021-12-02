@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles.css">
     <title> The Princess Bride Game-Along</title>
     <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Shadows+Into+Light&display=swap"
@@ -18,13 +18,13 @@
             <h1 id="toggle-bar">&#9776 </h1>
         </div>
         <ul class="mainMenu">
-            <li> <a id="homeNav" href="index.html">Home </a></li>
+            <li> <a id="homeNav" href="/index.html">Home </a></li>
             <li> <a id="florinNav" href="#florin">Florin </a></li>
             <li> <a id="insanityNav" href="#insanity">Cliffs of Insanity </a></li>
             <li> <a id="indigoNav" href="#indigo">Dual with Indigo </a></li>
             <li><a id="fezzikNav" href="#fezzik">Fight with Fezzik </a></li>
             <li> <a id="witsNav" href="#wits">Battle of Wits</a></li>
-            <li> <a id="contact" href="contact.html">Contact</a></li>
+            <li> <a id="contact" href="/contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -48,11 +48,10 @@
                 <div>
                     <ul>
                         <li id="question"> Who attacked the ship Westley was sailing on? <br>
-                            <form>
                                 <input class="box pirate" type="text" placeholder="Guess the Answer">
                                 <button class=btn id="pirate" type="button" onclick="pirateFunction()"> Check My Answer
                                 </button>
-                            </form>
+                           
                         </li> <br><br>
                         <li id="question"> With Westley presummed dead who is Buttercup engaged to 5 years later? <br>
                             <input class="box" type=text placeholder="Guess the Answer">
@@ -93,8 +92,8 @@
                     <h1 class="header">THE CLIFFS OF INSANITY</h1>
                     <img src="img/cliffofinsanity.jpg" alt="cliff of insanity" id="hide" width=350px height=auto>
                     <h2 class="intro"> Shall we climb?</h2>
-                    <p>Once you reach the top, the rope is cut to stop the follower, who didn't fall.</p>
-                    <p>Let's wait for him to climb to the top.... </p>
+                    <p class="intro">Once you reach the top, the rope is cut to stop the follower, who didn't fall.</p>
+                    <p class="intro">Let's wait for him to climb to the top.... </p>
                 </div>
                 <img id="pblogo" src="img/coi_looking_down.jpg" width=350px height=auto>
             </section>
@@ -106,24 +105,23 @@
                     <img src="img/indigo_fence.jpg" alt="Indigo Preparing to Fight" id="hide" width=350px height=auto>
                     <p> Hello, My name is Indigo Montoya. You killed my father, prepare to die.</p>
                 </div>
-                <div style="text-align:center;width:480px;">
-                    <style> canvas {
-                        border:1px solid #d3d3d3;
-                        background-color:rgba(247, 203, 7, 0.87);
-                    }
-                    </style>  
-                    <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
-                    <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
-                    <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
-                    <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+                <button class="btn" type="button" onclick="startSword()">START</button>
+                <br> <br>
+                <canvas id="canvas" width = 350 height = 270></canvas>
+                <br>
+                <div>
+                    <button id="control" class="btn" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+                    <button id="control" class="btn" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+                    <button id="control" class="btn" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+                    <button id="control" class="btn" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
                   </div>
             </section>
 
             <section id="fezzik">
                 <!--FIGHT WITH FEZZIK-->
-                <div>
+                <div> <br>
                     <h1 class="header">FEZZIK</h1>
-                    <h1 class="intro"> FINISH HIM, FINISH HIM YOUR WAY!</h1>
+                    <h1> FINISH HIM, FINISH HIM YOUR WAY!</h1>
                     <img src="img/fezzik_rock.jpg" alt="Fezzik throwing rock" id="hide" width=350px height=auto>
                     <h2>Hand-to-Hand Combat with a Giant..</h2>
                     <div id="box">
@@ -141,17 +139,18 @@
                 <!--BATTLE OF WITS-->
                 <div>
                     <h1 class="header" id="wits">BATTLE OF WITS</h1>
-                    <h1 class="intro">INCONCIEVABLE</h1>
+                    <h1>INCONCIEVABLE</h1>
                     <h2>Have you built up your immunity?</h2>
                     <p>Which wine will you drink?</p>
-                    <img id="chalice" src="img/chalice.jpg"
+                    <img id="chalice" src="img/chalice2.png"
                         onclick="alert('You chose wrong, seeing as I switched the glasses while your back was turned.')"
                         alt="wine chalice">
-                    <img id="chalice" src="img/chalice.jpg"
+                    <img id="chalice" src="img/chalice2.png"
                         onclick="alert('You chose wrong, seeing as I switched the glasses while your back was turned.')"
                         alt="wine chalice">
                 </div>
                 <div>
+                    <br> <hr>
                     <h1 class="header">TO BE CONTINUED... </h1>
                 </div>
             </section>

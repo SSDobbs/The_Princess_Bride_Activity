@@ -14,8 +14,8 @@
     <img id="pblogo" src="img/theprincessbridelogo.jpg" alt="The Princess Bride Title" width=350px height=auto>
     <h1 class="header"> THE PRINCESS BRIDE GAME-ALONG</h1>
 
-    <form action="" >
-        <input class="box" type="text" id="name" name="name" placeholder="Name">
+    <form >
+        <input class="box" type="text" id="name" name="name" placeholder="Name" required>
     </form>
     <br>
     <button class="btn" type="submit" value="Submit" onclick="welcomeFunction()"> Submit </button> </a>
@@ -23,8 +23,9 @@
     <script>
         function welcomeFunction() {
             let y = document.getElementById("name").value;
-        alert('Welcome ' + y); 
-        window.open("/princess_bride.html", "_self")
+            alert('Welcome ' + y); 
+            window.open("princess_bride.html", "_self")
+            console.log (y);
         }
     </script>
 
