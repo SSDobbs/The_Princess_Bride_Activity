@@ -24,8 +24,7 @@ function startGame() {
 
 function placeRocks() {
     var i, rows = [];
-
-    for (i = 0; i < components.num_of_rocks; i++) {
+    for (let i = 0; i < components.num_of_rocks; i++) {
         placeSingleRock(rows);
     }
     return rows;

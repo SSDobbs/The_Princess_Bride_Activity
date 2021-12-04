@@ -35,50 +35,45 @@ function topFunction() {
 
 /* Q1 onClick Check My Answer */
 function pirateFunction() {
-    document.getElementById("pirate").required = true;
     document.getElementById("pirate").innerHTML = "Dread Pirate Roberts";
+    document.getElementById("pirate").style.backgroundColor = "#32c0e3";
 }
 
 /* Q2 onClick Check My Answer */
 function humperdinkFunction() {
     document.getElementById("humperdink").innerHTML = "Prince Humperdink";
+    document.getElementById("humperdink").style.backgroundColor = "#32c0e3";
 }
 
 /* Q3 onClick Check My Answer */
 function guilderFunction() {
     document.getElementById("guilder").innerHTML = "Guilder, The sworn enemy of Florin";
+    document.getElementById("guilder").style.backgroundColor = "#32c0e3";
 }
 /* Q4 RHYME */
 function rhymeFunction() {
+    document.getElementById("rhyme").style.backgroundColor = "#32c0e3";
     alert("You can rhyme, almost anytime!");
 }
 
 /* Q5 onClick Answers */
-document.getElementById("eel").addEventListener("onclick", eelFunction);
-
 function eelFunction() {
     document.getElementById("eel").innerHTML = "I suppose you think you're brave, don't ya";
-}
+    document.getElementById("eel").style.backgroundColor = "#32c0e3";
 
-document.getElementById("sit-and-wait").addEventListener("click", sitFunction);
+}
 
 function sitFunction() {
-    document.getElementById("sit-and-wait").
-    innerHTML = "AS YOU WISH--we will sit and wait";
-    var audio = new Audio('audio/asyouwish.mp3');
-    audio.play();
+    document.getElementById("sit-and-wait").innerHTML = "AS YOU WISH--we will sit and wait";
+    document.getElementById("sit-and-wait").style.backgroundColor = "#32c0e3";
+    /*var audio = new Audio('audio/asyouwish.mp3');
+    audio.play();*/
 }
-
-document.getElementById("fight").
-addEventListener("click", fightFunction);
 
 function fightFunction() {
     document.getElementById("fight").
     innerHTML = "INCONCEIVABLE--You are but a small stature woman with no weapons BUT Fezzik wishes to do no harm";
-    var audio = new Audio('audio/inconceivable.mp3');
-    audio.play();
+    document.getElementById("fight").style.backgroundColor = "#32c0e3";
+    /*var audio = new Audio('audio/inconceivable.mp3');
+    audio.play();*/
 } /*End Q5 */
-
-/*CONTACT FORM SCRIPT*/
-
-
