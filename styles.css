@@ -89,10 +89,11 @@ ul {
     justify-content: center;
 }
 
-img{
+img {
     border-radius: 20%;
 }
-#large{
+
+#large {
     display: none;
 }
 
@@ -183,15 +184,10 @@ canvas {
 /*media query medium */
 @media only screen and (min-width: 628px) {
 
-    .cliff {
-        background-image: url(img/cliffofinsanity.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: auto;
-        margin-bottom: 15px;
+
+    #cliff2 {
+        color: #4f3e31;
     }
-
-
     .intro {
         color: bisque;
         outline-color: #4f3e31;
@@ -214,21 +210,34 @@ canvas {
         width: 33.33333%;
     }
 }
+
 /* end media query med screen */
 
 
 /*media query large */
 @media only screen and (min-width: 900px) {
 
+    .cliff {
+        background-image: url(img/cliffofinsanity.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: auto;
+        margin-bottom: 15px;
+    }
+    #cliff2 {
+        color: bisque;
+    }
+
     #hide,
     #toggle-bar {
         display: none;
     }
 
-    #large{
+    #large {
         display: initial;
     }
-    #mobile{
+
+    #mobile {
         display: none;
     }
 
@@ -274,4 +283,5 @@ canvas {
     }
 
 }
+
 /*end media query large screen */
